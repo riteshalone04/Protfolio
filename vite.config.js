@@ -8,6 +8,10 @@ export default defineConfig({
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] }),
-     tailwindcss(),
+    tailwindcss(),
   ],
+})
+export default defineConfig({
+  base: '/your-repo-name/', // Must start and end with a slash /
+  plugins: [react()],
 })
